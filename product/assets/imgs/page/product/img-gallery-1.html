@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title></title>
+    <meta name="author" content="Shield My Data">
+<meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="9vSHguXsxLTHCvtopYge0Gue89lUkBz0W5dEtmWuVfidkbLYj9y10qZbj0XguC-mHOqD6GLoLKJvonbgI4MFtA==">
+
+ 
+<link href="/assets/1d600a18/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/assets_b/css/toastr.css" rel="stylesheet">
+<link href="/assets_b/css/style2513.css" rel="stylesheet">
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--<link rel="shortcut icon" href="<= Url::to('@web/assets_b/images/fav-icon.ico') ?>" type="image/x-icon">-->
+    <!--<= $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Url::to('@web/assets_b/images/fav-icon.ico', true)]); ?>-->
+            
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1061697054"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-1061697054'); </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fr,en,nl,de'
+            }, 'google_translate_element');
+        }
+    </script>
+
+
+</head>
+<body class="home">
+        <ul class="social-media-container d-lg-none">
+            
+    	   <li class="social-media blog">
+    		 <img src="/assets_b/img/phone-call.png" alt="">
+    		 <a href="tel:(844) 228-7465"><p>Call us Now</p>  (844) 228-7465</a>
+    	   </li>
+        </ul>
+    <div class="page-wrapper">
+        
+        
+        <!-- <div class="body-wrapper"> -->
+        <!-- <= $this->render('announcement') ?> -->
+        <style>
+    /*#google_translate_element {*/
+    /*    display: none;*/
+    /*}*/
+</style>
+
+<!-- Start of Header -->
+<div class="topbar">
+    <div class="container-topbar">
+        <div class="menu-topbar-left d-none d-xl-block">
+            <ul class="nav-small">
+                <li><a class="font-xs" href="/about-us">About Us</a></li>
+                <li><a class="font-xs" href="/blog">Blog</a></li>
+                <li><a class="font-xs" href="/cart">Cart</a></li>
+            </ul>
+        </div>
+        <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3">Free shipping for all
+                orders over</span><span class="font-sm-bold color-success"> $75.00</span></div>
+        <div class="menu-topbar-right">
+            <!--<span class="font-xs color-brand-3">Need help? Call Us:</span><span class="font-sm-bold color-success"> <= $contact->contact_no ?></span>-->
+            <div id="google_translate_element"></div>
+
+
+            <!--<div class="dropdown dropdown-language">-->
+
+            <!--    <button class="btn dropdown-toggle" id="dropdownPage" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3"><img src="assets/imgs/template/en.svg" alt=""> English</span></button>-->
+            <!--    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownPage" data-bs-popper="static">-->
+            <!--        <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-en.svg" alt=""> English</a></li>-->
+            <!--        <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-fr.svg" alt=""> Français</a></li>-->
+            <!--        <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-es.svg" alt=""> Español</a></li>-->
+            <!--        <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-pt.svg" alt=""> Português</a></li>-->
+            <!--        <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-cn.svg" alt=""> 中国人</a></li>-->
+            <!--    </ul>-->
+            <!--</div>-->
+            <div class="dropdown dropdown-language">
+                <select id="currency" class="" name="currency" onchange="$.post('/change/change', { currency: $(this).val(), } )
+                                                                         .done(function( data ) {
+                                                                           location.reload(true);
+                                                                                   }
+                                                                      )" aria-required="true">
+                     <option>Select Currency</option>
+                   <option value="USD">USD</option>
+                   <option value="CAD">CAD</option>
+                   <option value="AUD">AUD</option>
+                   <option value="GBP">GBP</option>
+                                 </select>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="container pt-4 pb-4">
+        <div class="main-header">
+            <div class="row header-left">
+                <div class="col-lg-3 header-logo"><a class="d-flex" href="/" style="font-size: 1.6rem; color: #000; font-weight: 600;">
+                    <img src="/assets_b/img/shield-my-data.webp" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-5 header-search">
+                    <div class="box-header-search">
+                        <form class="form-search" action="/shop" method="get">                        <div class="box-keysearch d-flex">
+                            <input type="search" class="form-control font-xs" name="keyword" placeholder="Search your products..." autocomplete="off" required>                            <button type="submit" class="btn btn-search"><svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></button>                        </div>
+                        </form>                    </div>
+                </div>
+
+                <div class="col-lg-4 header-shop d-flex">
+                    <div class="d-flex cont-img">
+                        <img src="/assets/imgs/page/contact/call.svg" alt="">
+                    <div class="d-block call-num">
+                        <div class="font-xs color-brand-3 text-left">Call Us:</div>
+                       <a href="(844) 111 0000"><div class="font-sm-bold">(844) 111 0000</div></a> 
+                       </div>
+                    </div>
+                                            <div class="d-inline-block box-dropdown-cart"> 
+                           <div class="font-lg icon-list icon-account"><span>Account</span></div>
+                            <div class="dropdown-account">
+                                <ul>
+                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="/register">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                                        <div class="d-inline-block box-dropdown-cart"><a href="/cart"><div class="font-lg icon-list icon-cart"><span>Cart</span><span class="number-item font-xs" id="id-cart-value">0</span></div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-top sticky-bar">
+        <div class="header-nav logo-sm">
+        <nav class="main-menu"><ul class="menu"><li><a href="/">Home</a></li>
+<li><a href="/category/webroot-antivirus">Webroot Antivirus</a></li>
+<li><a href="/category/eset-antivirus">Eset Antivirus</a></li>
+<li><a href="/category/avg-antivirus">AVG Antivirus</a></li>
+<li><a href="/category/norton-antivirus">Norton Antivirus</a></li>
+<li><a href="/category/mcafee-antivirus">McAfee Antivirus</a></li>
+<li><a href="/category/avast-antivirus">Avast Antivirus</a></li>
+<li><a href="/category/bitdefender-antivirus">Bitdefender Antivirus</a></li>
+<li><a href="/category/kaspersky-antivirus">Kaspersky Antivirus</a></li></ul></nav>                <div class="d-lg-none sticky-bar">
+                    <a href="/">
+                    <img src="/assets_b/img/shield-my-data.webp" alt="logo">
+                    </a>
+                </div>
+            <div class="burger-icon burger-icon-white">
+                <span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End of Header -->
+
+        
+<main class="main">
+    <section class="section-box shop-template mt-60">
+        <div class="container">
+            <div class="text-center mb-150 mt-50">
+                <div class="image-404 mb-50"> <img src="assets_b/imgs/page/account/236-×-258-px-404-image.png" alt=""></div>
+                <h3></h3>
+                <p class="font-md-bold color-gray-600">The requested page does not exist.</p>
+                <div class="mt-15"> <a class="btn btn-buy w-auto arrow-back" href="/">Back to Homepage</a></div>
+            </div>
+        </div>
+    </section>
+</main>        
+<style>
+.help-block{
+    color: #fff;
+}
+</style>
+<!-- Start of Footer -->
+<section class="section-box box-newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <h3 class="color-white">Get ready for an <span class="color-warning">upcoming sale event!</span></h3>
+                <p class="font-lg color-white">Stay updated with the freshest news on Events, Sales, and Offers.</p>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12">
+                <div class="box-form-newsletter mt-15">
+                    <form id="w0" class="form-newsletter d-flex" action="/site/newsletter" method="post">
+<input type="hidden" name="_csrf" value="9vSHguXsxLTHCvtopYge0Gue89lUkBz0W5dEtmWuVfidkbLYj9y10qZbj0XguC-mHOqD6GLoLKJvonbgI4MFtA==">                    <div class="form-group field-newsletter-email required">
+
+<input type="email" id="newsletter-email" class="input-newsletter font-xs" name="Newsletter[email]" placeholder="Email address" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>                    <button class="btn btn-brand-2" type="submit">Subscribe<i class="w-icon-long-arrow-right"></i></button>
+                    </form>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 width-25 mb-30">
+                    <h4 class="mb-30 color-gray-1000">Contact</h4>
+                    <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Address:</strong> 1250,  Suite 300
+San Jose, CA 95134
+USA</div>
+                    <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Phone:</strong><a href="tel:(844) 228-0000">(844) 111-0000</a>
+                    </div>
+                    <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">E-mail:</strong> <a href="mailto:shieldmydata@gmail.com" class="__cf_email__">shieldmydata@gmail.com</a></div>
+                    <div class="mt-30">
+                        <div class="social-icons">
+<a class="icon-socials icon-facebook" href="/product/assets/imgs/page/product/img-gallery-1.jpg"></a>
+<a class="icon-socials icon-twitter" href="/product/assets/imgs/page/product/img-gallery-1.jpg"></a>
+<a class="icon-socials icon-instagram" href="/product/assets/imgs/page/product/img-gallery-1.jpg"></a>
+<a class="icon-socials icon-linkedin" href="/product/assets/imgs/page/product/img-gallery-1.jpg"></a>
+<a class="icon-socials icon-pinterest" href="/product/assets/imgs/page/product/img-gallery-1.jpg"></a>
+</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 width-20 mb-30">
+                    <h4 class="mb-30 color-gray-1000">FIND IT FAST</h4>
+                    <ul class="menu-footer"><li><a href="/category/webroot-antivirus">Webroot Antivirus</a></li>
+<li><a href="/category/eset-antivirus">Eset Antivirus</a></li>
+<li><a href="/category/avg-antivirus">AVG Antivirus</a></li>
+<li><a href="/category/norton-antivirus">Norton Antivirus</a></li>
+<li><a href="/category/mcafee-antivirus">McAfee Antivirus</a></li>
+<li><a href="/category/avast-antivirus">Avast Antivirus</a></li>
+<li><a href="/category/bitdefender-antivirus">Bitdefender Antivirus</a></li>
+<li><a href="/category/kaspersky-antivirus">Kaspersky Antivirus</a></li>
+<li><a href="/category/microsoft">Microsoft</a></li></ul>                </div>
+                <div class="col-lg-3 width-16 mb-30">
+                    <h4 class="mb-30 color-gray-1000">USEFUL LINKS</h4>
+                    <ul class="menu-footer"><li><a href="/terms-and-condition">Terms And Condition</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/refund">Refund Policy</a></li>
+<li><a href="/contact-us">Contact Us</a></li></ul>                </div>
+                <div class="col-lg-3 width-16 mb-30">
+                    <h4 class="mb-30 color-gray-1000">Help</h4>
+                    <ul class="menu-footer">
+                        <li><a href="/about-us">About</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/shop">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 width-23">
+                    <h4 class="mb-30 color-gray-1000">App &amp; Payment</h4>
+                    <div>
+                        <img src="/assets//imgs/template/payment-method.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-20">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 text-center text-lg-start"><span class="color-gray-900 font-sm">Copyright ©
+                            2023 Shield My Data. All rights reserved.</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+<script>
+    window.start.init({
+        Palette: "palette6",
+        Mode: "banner bottom",
+        Theme: "classic",
+        Message: "<b>Disclaimer-</b> This information is provided by Shield My Data ...",
+        ButtonText: "Accept",
+        LinkText: "Read more",
+        Location: "https://www.shieldmydata.com/disclaimer",
+        Time: "5",
+    })
+</script>        <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+    <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+            <div class="mobile-logo"><a class="d-flex" href="/"><img alt="logo" src="/assets_b/img/shield-my-data.webp"></a></div>
+            <div class="perfect-scroll">
+                <div class="mobile-menu-wrap mobile-header-border">
+                    <nav class="mt-15">
+                        <!--<ul class="mobile-menu font-heading">-->
+                        <!--    <li><a class="active" href="index.html">Home</a></li>-->
+                        <!--    <li><a href="#">Webroot Antivirus</a></li>-->
+                        <!--    <li><a href="#">Eset Antivirus</a> </li>-->
+                        <!--    <li><a href="#">AVG Antivirus</a></li>-->
+                        <!--    <li><a href="#">Norton Antivirus</a></li>-->
+                        <!--    <li><a href="#">McAfee Antivirus</a></li>-->
+                        <!--    <li><a href="#">Avast Antivirus</a></li>-->
+                        <!--    <li><a href="#">Bitdefender Antivirus</a></li>-->
+                        <!--    <li><a href="#">Kaspersky Antivirus</a></li>-->
+                        <!--    <li><a href="page-contact.html">Contact</a></li>-->
+                        <!--</ul>-->
+                        <ul class="mobile-menu font-heading"><li><a href="/">Home</a></li>
+<li><a href="/category/webroot-antivirus">Webroot Antivirus</a></li>
+<li><a href="/category/eset-antivirus">Eset Antivirus</a></li>
+<li><a href="/category/avg-antivirus">AVG Antivirus</a></li>
+<li><a href="/category/norton-antivirus">Norton Antivirus</a></li>
+<li><a href="/category/mcafee-antivirus">McAfee Antivirus</a></li>
+<li><a href="/category/avast-antivirus">Avast Antivirus</a></li>
+<li><a href="/category/bitdefender-antivirus">Bitdefender Antivirus</a></li>
+<li><a href="/category/kaspersky-antivirus">Kaspersky Antivirus</a></li></ul>                    </nav>
+                </div>
+                <div class="site-copyright color-gray-400 mt-30">Copyright 2023 Shield My Data</div>
+            </div>
+        </div>
+    </div>
+</div>        <!-- </div>     -->
+        <script src="/assets/94193bab/jquery.js"></script>
+<script src="/assets/eaa71510/yii.js"></script>
+<script src="/assets/1d600a18/dist/js/bootstrap.bundle.js"></script>
+<script src="/assets_b/js/cart.js"></script>
+<script src="/assets_b/js/cart.min.js"></script>
+<script src="/assets_b/js/toastr.js"></script>
+<script src="/assets_b/js/vendors/modernizr-3.6.0.min.js"></script>
+<script src="/assets_b/js/vendors/jquery-migrate-3.3.0.min.js"></script>
+<script src="/assets_b/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="/assets_b/js/vendors/waypoints.js"></script>
+<script src="/assets_b/js/vendors/wow.js"></script>
+<script src="/assets_b/js/vendors/magnific-popup.js"></script>
+<script src="/assets_b/js/vendors/perfect-scrollbar.min.js"></script>
+<script src="/assets_b/js/vendors/select2.min.js"></script>
+<script src="/assets_b/js/vendors/isotope.js"></script>
+<script src="/assets_b/js/vendors/scrollup.js"></script>
+<script src="/assets_b/js/vendors/swiper-bundle.min.js"></script>
+<script src="/assets_b/js/vendors/noUISlider.js"></script>
+<script src="/assets_b/js/vendors/slider.js"></script>
+<script src="/assets_b/js/vendors/counterup.js"></script>
+<script src="/assets_b/js/vendors/jquery.countdown.min.js"></script>
+<script src="/assets_b/js/vendors/jquery.elevatezoom.js"></script>
+<script src="/assets_b/js/vendors/slick.js"></script>
+<script src="/assets_b/js/main2513.js"></script>
+<script src="/assets_b/js/shop23cd.js"></script>
+<script src="/assets/eaa71510/yii.validation.js"></script>
+<script src="/assets/eaa71510/yii.activeForm.js"></script>
+<script>jQuery(function ($) {
+jQuery('#w0').yiiActiveForm([{"id":"newsletter-email","name":"email","container":".field-newsletter-email","input":"#newsletter-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});value = yii.validation.trim($form, attribute, [], value);yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});yii.validation.string(value, messages, {"message":"Email must be a string.","max":255,"tooLong":"Email should contain at most 255 characters.","skipOnEmpty":1});}}], []);
+});</script>
+    </div>
+    
+<!--    <div class="call">-->
+<!--    <p>Call Us Now</p>-->
+<!--    <a href="tel:<= $c->contact_no ?>"><i class="w-icon-call"></i><= $c->contact_no ?></a>-->
+<!--</div>-->
+<script src="//code.tidio.co/7m66mey3vvm1al8a0f4io1qyl5dyculn.js" async></script>
+
+</body>
+
+</html>
