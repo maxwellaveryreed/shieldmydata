@@ -11520,6 +11520,7 @@ body{
 .social-media.blog {
     background-color: #3F77F0;
     border-radius: 25px 0px 0px 25px;
+    display: none !important;
 }
 
 .social-media a:hover {
